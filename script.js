@@ -14,10 +14,10 @@ function calcular() {
     res3.innerHTML = ""
   } else {
     var d = Math.sqrt(delta);
-    var x1 = ((bz * -1 + d) / 2) * az;
-    var x2 = ((bz * -1 - d) / 2) * az;
-    var xv = ((bz * -1) / 2) * az;
-    var yv = ((delta * -1) / 4) * az;
+    var x1 = (bz * -1 + d) / (2 * az);
+    var x2 = (bz * -1 - d) / (2 * az);
+    var xv = (bz * -1) / (2 * az);
+    var yv = (delta * -1) / (4 * az);
 
     if (a.value.length == 0 || b.value.length == 0 || c.value.length == 0) {
       window.alert("[ERRO] Verifique os dados.");
